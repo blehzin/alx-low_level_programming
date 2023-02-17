@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main- prints a string followed by a new line
- * Rreturn: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
