@@ -5,24 +5,27 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
-	int i, j, k;
+	int i;
+	int j;
 
-	for (i = 0; i < 100; i++)
+	for (i = 0; i < 10; i++)
 	{
-		j = i / 10;
-		k = i % 10;
+	for (j = 1; j < 10; j++)
+	{
+		if (i < j && i != j)
+		{
+			putchar(i + '0');
+			putchar(j + '0');
+			if (i + j != 17)
+			{
+				putchar('.');
+				putchar(' ');
+			}
+		}
 	}
-	if (j < k)
-	{
-		putchar(j + '0');
-		putchar(k + '0');
-	}
-	if (i < 89)
-	{
-		putchar(44);
-		putchar(33);
 	}
 	putchar('\n');
 	return (0);
