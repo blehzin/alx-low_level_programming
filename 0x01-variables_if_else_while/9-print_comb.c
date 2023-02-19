@@ -13,13 +13,23 @@
  */
 int main(void)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0 ; i < 10 ; i++)
+	while (i < 100)
 	{
-		putchar(i + '0');
-		putchar(' ');
-		putchar('.');
+		if (i / 10 < i % 10)
+		{
+			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
+
+		if (i < 89)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		}
+		i++;
 	}
+	putchar('\n');
 	return (0);
 }
