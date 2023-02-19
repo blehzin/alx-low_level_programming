@@ -3,32 +3,20 @@
 /**
  * main - entry point
  *
- * Description: prints all possible combinations of single-digit numbers.
- * Numbers must be separated by ",", followed by a space
- * Numbers should be printed in ascending order with two digits
- * the two digits must be different
- * print only the smallest combination of two digits
- *
  * Return: 0
  */
 int main(void)
 {
-	int i = 0;
+	int i;
 
-	while (i < 100)
+	for (i = 0; i < 10; i++)
 	{
-		if (i / 10 < i % 10)
-		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-
-		if (i < 89)
+		putchar(i + '0');
+		if (i != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		}
-		i++;
 	}
 	return (0);
 }
