@@ -3,7 +3,7 @@
  * main - main function
  * Return: always 0
  */
-inbt main(void)
+int main(void)
 {
 	int i;
 	int sum;
@@ -16,6 +16,6 @@ inbt main(void)
 			sum = sum + i;
 		}
 	}
-	prinf("%d\n", sum);
+	printf("%d\n", sum);
 		return (0);
 }
